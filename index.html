@@ -22,7 +22,7 @@
                 <span></span>
                 <span></span>
             </div>
-            <div class="nav-menu mode-option" style="opacity: 0;"> 
+            <div class="nav-menu mode-option firstload"> 
                 <ul class="nav-menu-icons">
                     <li>
                         <a class="icon mode-option" href="#home" id="home-icon">
@@ -128,6 +128,7 @@
                         </button>
                     </li>
                 </ul>
+                <div class="background"></div>
             </div>
         </nav>
     </header>
@@ -267,9 +268,7 @@
         </section>
     </main>
     <footer id="contact">
-        <div id="contact-title">
-            <div>&lt;<h3>Contact Me</h3>&gt;</div>
-        </div>
+        <div id="contact-title">&lt;<h3>Contact Me</h3>&gt;</div>
         <?php include("validation.php"); ?>
         <form id="contact-form" action="<?= $_SERVER['PHP_SELF']; ?>" method="POST">
             <input class="form-text" name="name" id="name" type="text" placeholder="Name">
@@ -279,8 +278,8 @@
             <input type="submit" value="Say Hi!">
         </form>
         <div id="contact-links">
-            <a href=""><h4>GitHub</h4><img src="assets/logo_github.svg" alt=""></a>
-            <a href=""><h4>LikedIn</h4><img src="assets/logo_linkedin.svg" alt=""></a>
+            <a href="https://github.com/SantiAsCode" target="_blank"><h4>GitHub</h4><img src="assets/logo_github.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/santiago-al%C3%A9-aguilera-90356b213/" target="_blank"><h4>LikedIn</h4><img src="assets/logo_linkedin.svg" alt=""></a>
         </div>
     </footer>
 </body>

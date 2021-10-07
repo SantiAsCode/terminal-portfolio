@@ -5,9 +5,9 @@ const navMenu = document.querySelector(".nav-menu");
 const navIcons = document.querySelectorAll(".nav-menu-icons");
 
 menuBtn.addEventListener("click",()=>{
-    if (navMenu.hasAttribute("style")) {
-        navMenu.removeAttribute("style");
-    }
+    if (navMenu.classList.contains("firstload")) {
+        navMenu.classList.remove("firstload");
+    };
     navMenu.classList.toggle("active");
     navIcons.forEach(element => {
         element.classList.toggle("right");
