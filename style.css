@@ -247,6 +247,7 @@ nav {
     transform: translateX(-50%);
     fill: url(#bg-mobile_gradient);
     z-index: 10;
+    display: none;
 }
 #bg-tablet {
     position: absolute;
@@ -254,7 +255,7 @@ nav {
     height: 500vh;
     fill: url(#bg-tablet_gradient);
     z-index: 10;
-    display: none;
+
 }
 section,footer {
     position: relative;
@@ -500,6 +501,7 @@ h3 {
 #projects-panel {
     position: relative;
     width: 100vw;
+    
     display: flex;
     overflow-x: scroll;
     -ms-scroll-snap-type: x mandatory;
@@ -510,6 +512,7 @@ h3 {
 #projects-panel div {
     position: relative;
     width: calc(100vw - 4rem);
+    max-width: 600px;
     display: flex;
     scroll-snap-align: center;
     flex-shrink: 0;
@@ -640,6 +643,7 @@ h3 {
 }
 #skills-panel > div {
     width: calc(100vw - 4rem);
+    max-width: 600px;
     display: flex;
     scroll-snap-align: center;
     flex-shrink: 0;
@@ -656,6 +660,7 @@ h3 {
 }
 #skills-panel div div {
     width: 100%;
+    max-width: 400px;
     height: 90%;
     display: grid;
     place-items: center;
@@ -771,6 +776,7 @@ h3 {
 #about-panel {
     position: relative;
     width: calc(100vw - 4rem);
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -839,6 +845,7 @@ h3 {
 #contact-form {
     position: relative;
     width: calc(100vw - 4rem);
+    max-width: 600px;
     display: flex;
     scroll-snap-align: center;
     flex-shrink: 0;
@@ -891,6 +898,7 @@ h3 {
 #contact-links {
     position: relative;
     width: calc(100vw - 4rem);
+    max-width: 600px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
