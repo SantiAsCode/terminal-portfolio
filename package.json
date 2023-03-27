@@ -1,5 +1,5 @@
 {
-  "name": "termi-nal-portfolio",
+  "name": "terminal-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,8 +15,10 @@
     "@types/react-dom": "18.0.11",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
-    "mongodb": "^5.0.1",
+    "mongodb": "^5.1.0",
+    "mongoose": "^7.0.2",
     "next": "13.1.6",
+    "next-auth": "^4.20.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.5"
