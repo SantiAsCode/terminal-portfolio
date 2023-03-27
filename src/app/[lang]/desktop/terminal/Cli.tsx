@@ -3,7 +3,7 @@
 import React, { useState, useRef } from 'react';
 import Command from './Command';
 import Prompt from './Prompt';
-import CliMessages from "../../lib/json/guest-messages.json";
+import CliMessages from "@lib/json/guest-messages.json";
 
 export default function Cli() {
 

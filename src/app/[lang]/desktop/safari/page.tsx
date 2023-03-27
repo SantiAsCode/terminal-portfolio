@@ -1,9 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import NavBar from '../NavBar';
-import Explorer from './Explorer';
-import ToolMenu from './ToolMenu';
+import NavBar from '@components/ToolBar';
 
 export default function Terminal() {
 
@@ -27,10 +25,8 @@ export default function Terminal() {
         <NavBar
           toggleFullWindow={toggleFullWindow}
         >
-          sasdsadasd {`${fullWindow}`}
-          <ToolMenu></ToolMenu>
+          safari {`fullwindow:${fullWindow}`}
         </NavBar>
-        <Explorer />
       </div>
     </div>
       
