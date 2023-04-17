@@ -1,13 +1,12 @@
 'use client';
-
 import React, { useState, useRef } from 'react';
 import Command from './Command';
 import Prompt from './Prompt';
-import CliMessages from "@lib/json/guest-messages.json";
+import CliMessages from "@lib/json/messages.json";
 
 export default function Cli() {
 
-  const inputRef = useRef(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const bringFocus = () => {
     if (inputRef.current) {
@@ -15,13 +14,13 @@ export default function Cli() {
     }
   }
 
-  const [ commandList, setCommandList ] = useState(CliMessages.guest);
-
+  const messages = CliMessages[global.locale as keyof typeof CliMessages];
+  const [commandList, setCommandList] = useState<string[]>(messages.guest);
   const addCommandToList = (newCommand: string) => {
-    if (newCommand == 'clear') {
+    if (newCommand === 'clear') {
       setCommandList([])
     } else {
-      setCommandList([...commandList, 'guest@santiascode-Portfolio ~ % '+newCommand]);
+      setCommandList([...commandList, 'guest@santiascode-Portfolio ~ % ' + newCommand]);
     }
   };
 
@@ -40,6 +39,5 @@ export default function Cli() {
         inputRef={inputRef}
       />
     </div>
-
-  )
+  );
 }

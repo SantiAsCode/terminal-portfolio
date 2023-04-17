@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { connectMongo } from '@lib/mongo/connect';
+import connectMongo from '@lib/mongo/connect';
 import DocumentModel from '@lib/models/document';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {

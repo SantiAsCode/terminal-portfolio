@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Prompt({ addCommandToList, inputRef }: any) {
 
   const handleKeyDown = (event: any) => {

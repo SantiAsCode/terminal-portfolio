@@ -6,6 +6,7 @@ declare global {
         conn: Mongoose | null;
         // promise: Promise<Mongoose> | null;
     };
+    var locale: string | null;
 }
 
 /* eslint-disable no-var */

@@ -1,0 +1,38 @@
+{
+    "es": {
+        "guest": [
+            "Bienvenido a mi cartera personal, para obtener más información sobre el uso de esta consola, escriba 'help'",
+            "segundo mensaje",
+            "tercer mensaje",
+            "aca tmb para q lo sepas",
+            "y uno para más para variar"
+        ],
+        "logged":[
+            
+        ]
+    },
+    "en": {
+        "guest": [
+            "Bienvenido a mi cartera personal, para obtener más información sobre el uso de esta consola, escriba 'help'",
+            "segundo mensaje",
+            "tercer mensaje",
+            "aca tmb para q lo sepas",
+            "y uno para más para variar"
+        ],
+        "logged":[
+            
+        ]
+    },
+    "pt": {
+        "guest": [
+            "Bienvenido a mi cartera personal, para obtener más información sobre el uso de esta consola, escriba 'help'",
+            "segundo mensaje",
+            "tercer mensaje",
+            "aca tmb para q lo sepas",
+            "y uno para más para variar"
+        ],
+        "logged":[
+            
+        ]
+    }
+}
